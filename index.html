@@ -1,0 +1,3745 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CineSavings</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/logo/csfavicon.png" type="image/x-icon" width="16px" height="16">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+
+</head>
+
+<body>
+
+
+  <div class="overlay" data-overlay></div>
+
+  <!--
+    - MODAL
+  -->
+
+  <div class="modal" data-modal>
+
+    <div class="modal-close-overlay" data-modal-overlay></div>
+
+    <div class="modal-content">
+
+      <button class="modal-close-btn" data-modal-close>
+        <ion-icon name="close-outline"></ion-icon>
+      </button>
+
+      <div class="newsletter-img">
+        <img src="./assets/images/logo/cinesavings.png" alt="subscribe newsletter" width="400" height="400">
+      </div>
+
+      <div class="newsletter">
+
+        <form action="#">
+
+          <div class="newsletter-header">
+
+            <h3 class="newsletter-title">Subscribe to our Newsletter.</h3>
+
+          </div>
+
+          <input type="email" name="email" class="email-field" placeholder="Email Address" required>
+
+          <button type="submit" class="btn-newsletter">Subscribe</button>
+
+        </form>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+
+
+
+  <!--
+    - NOTIFICATION TOAST
+  -->
+
+  <div class="notification-toast" data-toast>
+
+    <button class="toast-close-btn" data-toast-close>
+      <ion-icon name="close-outline"></ion-icon>
+    </button>
+
+    <div class="toast-banner">
+      <img src="./assets/images/products/netflix.webp" alt="Netflix Logo" width="80" height="70">
+    </div>
+
+    <div class="toast-detail">
+
+      <p class="toast-message">
+        Vardhan just bought
+      </p>
+
+      <p class="toast-title">
+        Netflix
+      </p>
+
+      <p class="toast-meta">
+        <time datetime="PT2M">2 Minutes</time> ago
+      </p>
+
+    </div>
+
+  </div>
+
+
+
+
+
+  <!--
+    - HEADER
+  -->
+
+  <header>
+
+    <div class="header-top">
+
+      <div class="container">
+
+        <ul class="header-social-container">
+
+          <li>
+            <a href="https://www.facebook.com/vardcollectionsgiftingstore/" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="https://www.instagram.com/vardcollections/" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="https://www.linkedin.com/in/vardhansans/" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+        <div class="header-alert-news">
+          <p>
+            <b>BO-GO-CS</b>
+            Buy one Get one only this week!
+          </p>
+        </div>
+
+        <div class="header-top-actions">
+
+          <select name="currency">
+            <option value="inr">INR &#8377;</option>
+            <option value="usd">USD &dollar;</option>
+            <option value="eur">EUR &euro;</option>
+
+          </select>
+
+          <select name="language">
+
+            <option value="en-US">English</option>
+            <option value="es-ES">Espa&ntilde;ol</option>
+            <option value="fr">Fran&ccedil;ais</option>
+
+          </select>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="header-main">
+
+      <div class="container">
+
+        <a href="#" class="header-logo">
+          <img src="./assets/images/logo/Cinesavings_12036.png" alt="CineSavings's logo" width="120" height="40">
+        </a>
+
+        <div class="header-search-container">
+
+          <input type="search" name="search" class="search-field" placeholder="Enter name of the product...">
+
+          <button class="search-btn">
+            <ion-icon name="search-outline"></ion-icon>
+          </button>
+
+        </div>
+
+        <div class="header-user-actions">
+          <a href="./Login/Login.html">
+            <button id="profile-btn" class="responsive-btn">
+              <ion-icon name="person-outline"></ion-icon>
+            </button>
+          </a>
+          <button id="like-btn" class="responsive-btn">
+            <ion-icon name="heart-outline"></ion-icon>
+            <span class="count"></span>
+          </button>
+
+          <button id="cart-btn" class="responsive-btn">
+            <ion-icon name="bag-handle-outline"></ion-icon>
+            <span class="count"></span>
+          </button>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <nav class="desktop-navigation-menu">
+
+      <div class="container">
+
+        <ul class="desktop-menu-category-list">
+
+          <li class="menu-category">
+            <a href="#" class="menu-title">Home</a>
+          </li>
+
+          <li class="menu-category">
+            <a href="#" class="menu-title">Categories</a>
+
+            <div class="dropdown-panel">
+
+              <ul class="dropdown-panel-list">
+
+                <li class="menu-title">
+                  <a href="#">OTT</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Netflix</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Prime Video</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Disney+ HotStar</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Youtube</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Zee-5</a>
+                </li>
+
+              </ul>
+
+              <ul class="dropdown-panel-list">
+
+                <li class="menu-title">
+                  <a href="#">OTT</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Netflix</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Prime Video</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Hotstar</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Zee-5</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Aha</a>
+                </li>
+
+              </ul>
+
+              <ul class="dropdown-panel-list">
+
+                <li class="menu-title">
+                  <a href="#">Private</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">OTT</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Entertainment</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Music</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Fun</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Kids</a>
+                </li>
+
+              </ul>
+
+            </div>
+          </li>
+
+          <li class="menu-category">
+            <a href="#" class="menu-title">OTT</a>
+
+            <ul class="dropdown-list">
+
+              <li class="dropdown-item">
+                <a href="#">International</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="#">HBO</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="#">Hulu</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="#">PassionFlix</a>
+              </li>
+
+            </ul>
+          </li>
+
+          <li class="menu-category">
+            <a href="#" class="menu-title">Private</a>
+
+            <ul class="dropdown-list">
+
+              <li class="dropdown-item">
+                <a href="#">PornHub</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="#">Brazzers</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="#">OnlyFans</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="#">XHamster</a>
+              </li>
+
+            </ul>
+          </li>
+
+          <li class="menu-category">
+            <a href="#" class="menu-title">Productivity</a>
+
+            <ul class="dropdown-list">
+
+              <li class="dropdown-item">
+                <a href="Grammarly.html">Grammarly</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="#">Windows 11 Pro</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="ms365.html">MS 365</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="gone.html">Google One</a>
+              </li>
+
+            </ul>
+          </li>
+
+          <li class="menu-category">
+            <a href="#" class="menu-title">Music</a>
+
+            <ul class="dropdown-list">
+
+              <li class="dropdown-item">
+                <a href="#">OTT Music</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="#">Apple Music</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="#">Gaana</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="#">Jio Saavn</a>
+              </li>
+
+            </ul>
+          </li>
+
+          <li class="menu-category">
+            <a href="#" class="menu-title">Blog</a>
+          </li>
+
+          <li class="menu-category">
+            <a href="#" class="menu-title">Hot Offers</a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </nav>
+
+    <div class="mobile-bottom-navigation">
+
+      <button class="action-btn" data-mobile-menu-open-btn>
+        <ion-icon name="menu-outline"></ion-icon>
+      </button>
+
+      <button class="action-btn">
+        <ion-icon name="bag-handle-outline"></ion-icon>
+
+        <span class="count">0</span>
+      </button>
+
+      <button class="action-btn">
+        <ion-icon name="home-outline"></ion-icon>
+      </button>
+
+      <button class="action-btn">
+        <ion-icon name="heart-outline"></ion-icon>
+
+        <span class="count">0</span>
+      </button>
+
+      <button class="action-btn" data-mobile-menu-open-btn>
+        <ion-icon name="grid-outline"></ion-icon>
+      </button>
+
+    </div>
+
+    <nav class="mobile-navigation-menu  has-scrollbar" data-mobile-menu>
+
+      <div class="menu-top">
+        <h2 class="menu-title">Menu</h2>
+
+        <button class="menu-close-btn" data-mobile-menu-close-btn>
+          <ion-icon name="close-outline"></ion-icon>
+        </button>
+      </div>
+
+      <ul class="mobile-menu-category-list">
+
+        <li class="menu-category">
+          <a href="#" class="menu-title">Home</a>
+        </li>
+
+        <li class="menu-category">
+
+          <button class="accordion-menu" data-accordion-btn>
+            <p class="menu-title">OTT</p>
+
+            <div>
+              <ion-icon name="add-outline" class="add-icon"></ion-icon>
+              <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+            </div>
+          </button>
+
+          <ul class="submenu-category-list" data-accordion>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Netflix</a>
+            </li>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">PrimeVideo</a>
+            </li>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">HotStar</a>
+            </li>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Zee-5</a>
+            </li>
+
+          </ul>
+
+        </li>
+
+        <li class="menu-category">
+
+          <button class="accordion-menu" data-accordion-btn>
+            <p class="menu-title">Private</p>
+
+            <div>
+              <ion-icon name="add-outline" class="add-icon"></ion-icon>
+              <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+            </div>
+          </button>
+
+          <ul class="submenu-category-list" data-accordion>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">PornHub</a>
+            </li>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Brazzers</a>
+            </li>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">OnlyFans</a>
+            </li>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">XHamster</a>
+            </li>
+
+          </ul>
+
+        </li>
+
+        <li class="menu-category">
+
+          <button class="accordion-menu" data-accordion-btn>
+            <p class="menu-title">Productivity</p>
+
+            <div>
+              <ion-icon name="add-outline" class="add-icon"></ion-icon>
+              <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+            </div>
+          </button>
+
+          <ul class="submenu-category-list" data-accordion>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Microsoft-365</a>
+            </li>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Windows 11 Pro</a>
+            </li>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Grammarly</a>
+            </li>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Google One</a>
+            </li>
+
+          </ul>
+
+        </li>
+
+        <li class="menu-category">
+
+          <button class="accordion-menu" data-accordion-btn>
+            <p class="menu-title">Music</p>
+
+            <div>
+              <ion-icon name="add-outline" class="add-icon"></ion-icon>
+              <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+            </div>
+          </button>
+
+          <ul class="submenu-category-list" data-accordion>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Spotify</a>
+            </li>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Apple Music</a>
+            </li>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Gaana</a>
+            </li>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Jio Saavn</a>
+            </li>
+
+          </ul>
+
+        </li>
+
+        <li class="menu-category">
+          <a href="#" class="menu-title">Blog</a>
+        </li>
+
+        <li class="menu-category">
+          <a href="#" class="menu-title">Hot Offers</a>
+        </li>
+
+      </ul>
+
+      <div class="menu-bottom">
+
+        <ul class="menu-category-list">
+
+          <li class="menu-category">
+
+            <button class="accordion-menu" data-accordion-btn>
+              <p class="menu-title">Language</p>
+
+              <ion-icon name="caret-back-outline" class="caret-back"></ion-icon>
+            </button>
+
+            <ul class="submenu-category-list" data-accordion>
+
+              <li class="submenu-category">
+                <a href="#" class="submenu-title">English</a>
+              </li>
+
+              <li class="submenu-category">
+                <a href="#" class="submenu-title">Espa&ntilde;ol</a>
+              </li>
+
+              <li class="submenu-category">
+                <a href="#" class="submenu-title">Fren&ccedil;h</a>
+              </li>
+
+            </ul>
+
+          </li>
+
+          <li class="menu-category">
+            <button class="accordion-menu" data-accordion-btn>
+              <p class="menu-title">Currency</p>
+              <ion-icon name="caret-back-outline" class="caret-back"></ion-icon>
+            </button>
+            <ul class="submenu-category-list" data-accordion>
+              <li class="submenu-category">
+                <a href="#" class="submenu-title">INR &#8377;</a>
+              </li>
+              <li class="submenu-category">
+                <a href="#" class="submenu-title">USD &dollar;</a>
+              </li>
+              <li class="submenu-category">
+                <a href="#" class="submenu-title">EUR &euro;</a>
+              </li>
+            </ul>
+          </li>
+
+        </ul>
+
+        <ul class="menu-social-container">
+
+          <li>
+            <a href="https://www.facebook.com/vardcollectionsgiftingstore/" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="https://www.instagram.com/vardcollections/" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="https://www.linkedin.com/in/vardhansans/" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </nav>
+
+  </header>
+
+
+
+
+
+  <!--
+    - MAIN
+  -->
+
+  <main>
+
+    <!--
+      - BANNER
+    -->
+
+    <div class="banner">
+
+      <div class="container">
+
+        <div class="slider-container has-scrollbar">
+
+          <div class="slider-item">
+
+            <img src="./assets/images/CineSavingsSpotifyBanner.png" alt="Best Selling Service in March"
+              class="banner-img">
+
+            <div class="banner-content">
+
+              <p class="banner-subtitle">Best Selling</p>
+
+              <h2 class="banner-title">in May 2024</h2>
+
+              <p class="banner-text">
+                Starting at &#8377; <b>199</b>
+              </p>
+
+              <a href="Spotify.html" class="banner-btn1">Shop now</a>
+
+            </div>
+
+          </div>
+
+          <div class="slider-item">
+
+            <img src="./assets/images/CineSavingsWindowsBanner.png" alt="WindowsBanner" class="banner-img">
+
+            <div class="banner-content">
+
+              <p class="banner-subtitle">Trending Product</p>
+
+              <h2 class="banner-title">Windows 11 Pro Key</h2>
+
+              <p class="banner-text">
+                Starting at &#8377; <b>750</b>
+              </p>
+
+              <a href="w11p.html" class="banner-btn2">Shop now</a>
+
+            </div>
+
+          </div>
+
+          <div class="slider-item">
+
+            <img src="./assets/images/CineSavingsDuoLingoBanner.png" alt="DuoLingo Banner" class="banner-img">
+
+            <div class="banner-content">
+
+              <p class="banner-subtitle">Learn New!</p>
+
+              <h2 class="banner-title">Languages with</h2>
+
+              <p class="banner-text">
+                Starting at &#8377; <b>400</b>
+              </p>
+
+              <a href="duolingo.html" class="banner-btn3">Shop now</a>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+
+
+
+    <!--
+      - CATEGORY
+    -->
+
+    <div class="category">
+
+      <div class="container">
+
+        <div class="category-item-container has-scrollbar">
+
+          <div class="category-item">
+
+            <div class="category-img-box">
+              <img src="./assets/images/pv.png" alt="OTT" width="30">
+            </div>
+
+            <div class="category-content-box">
+
+              <div class="category-content-flex">
+                <h3 class="category-item-title">OTT Platforms</h3>
+
+                <p class="category-item-amount">(60)</p>
+              </div>
+
+              <a href="#" class="category-btn">Show all</a>
+
+            </div>
+
+          </div>
+
+          <div class="category-item">
+
+            <div class="category-img-box">
+              <img src="./assets/images/icons/entertainmenticon.png" alt="Entertainment icon" width="30">
+            </div>
+
+            <div class="category-content-box">
+
+              <div class="category-content-flex">
+                <h3 class="category-item-title">Entertainment</h3>
+
+                <p class="category-item-amount">(37)</p>
+              </div>
+
+              <a href="#" class="category-btn">Show all</a>
+
+            </div>
+
+          </div>
+
+          <div class="category-item">
+
+            <div class="category-img-box">
+              <img src="./assets/images/icons/productivityicon.png" alt="productivity icon" width="30">
+            </div>
+
+            <div class="category-content-box">
+
+              <div class="category-content-flex">
+                <h3 class="category-item-title">Productivity</h3>
+
+                <p class="category-item-amount">(12)</p>
+              </div>
+
+              <a href="#" class="category-btn">Show all</a>
+
+            </div>
+
+          </div>
+
+          <div class="category-item">
+
+            <div class="category-img-box">
+              <img src="./assets/images/icons/editing icon.png" alt="Editing" width="30">
+            </div>
+
+            <div class="category-content-box">
+
+              <div class="category-content-flex">
+                <h3 class="category-item-title">Editing and Production</h3>
+
+                <p class="category-item-amount">(23)</p>
+              </div>
+
+              <a href="#" class="category-btn">Show all</a>
+
+            </div>
+
+          </div>
+          <div class="category-item">
+
+            <div class="category-img-box">
+              <img src="./assets/images/icons/privateicon.png" alt="Private icon logo" width="30">
+            </div>
+
+            <div class="category-content-box">
+
+              <div class="category-content-flex">
+                <h3 class="category-item-title">Private</h3>
+
+                <p class="category-item-amount">(29)</p>
+              </div>
+
+              <a href="#" class="category-btn">Show all</a>
+
+            </div>
+
+          </div>
+
+          <div class="category-item">
+
+            <div class="category-img-box">
+              <img src="./assets/images/icons/productkeyicon.png" alt="Product Key Icon" width="30">
+            </div>
+
+            <div class="category-content-box">
+
+              <div class="category-content-flex">
+                <h3 class="category-item-title">Keys</h3>
+
+                <p class="category-item-amount">(35)</p>
+              </div>
+
+              <a href="#" class="category-btn">Show all</a>
+
+            </div>
+
+          </div>
+
+          <div class="category-item">
+
+            <div class="category-img-box">
+              <img src="./assets/images/icons/crackedicon.png" alt="Cracked icon" width="30">
+            </div>
+
+            <div class="category-content-box">
+
+              <div class="category-content-flex">
+                <h3 class="category-item-title">Cracked</h3>
+
+                <p class="category-item-amount">(16)</p>
+              </div>
+
+              <a href="#" class="category-btn">Show all</a>
+
+            </div>
+
+          </div>
+
+          <div class="category-item">
+
+            <div class="category-img-box">
+              <img src="./assets/images/icons/vpnicom.jpg" alt="VPN Icon" width="30">
+            </div>
+
+            <div class="category-content-box">
+
+              <div class="category-content-flex">
+                <h3 class="category-item-title">VPN</h3>
+
+                <p class="category-item-amount">(27)</p>
+              </div>
+
+              <a href="#" class="category-btn">Show all</a>
+
+            </div>
+
+          </div>
+
+          <div class="category-item">
+
+            <div class="category-img-box">
+              <img src="./assets/images/icons/storage icon.png" alt="Storage Icon" width="30">
+            </div>
+
+            <div class="category-content-box">
+
+              <div class="category-content-flex">
+                <h3 class="category-item-title">Storage</h3>
+
+                <p class="category-item-amount">(39)</p>
+              </div>
+
+              <a href="#" class="category-btn">Show all</a>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <!--
+      - PRODUCT
+    -->
+
+    <div class="product-container">
+
+      <div class="container">
+
+
+        <!--
+          - SIDEBAR
+        -->
+
+        <div class="sidebar  has-scrollbar" data-mobile-menu>
+
+          <div class="sidebar-category">
+
+            <div class="sidebar-top">
+              <h2 class="sidebar-title">Category</h2>
+
+              <button class="sidebar-close-btn" data-mobile-menu-close-btn>
+                <ion-icon name="close-outline"></ion-icon>
+              </button>
+            </div>
+
+            <ul class="sidebar-menu-category-list">
+
+              <li class="sidebar-menu-category">
+
+                <button class="sidebar-accordion-menu" data-accordion-btn>
+
+                  <div class="menu-title-flex">
+                    <img src="./assets/images/pv.png" alt="OTT" width="20" height="20" class="menu-title-img">
+
+                    <p class="menu-title">OTT</p>
+                  </div>
+
+                  <div>
+                    <ion-icon name="add-outline" class="add-icon"></ion-icon>
+                    <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+                  </div>
+
+                </button>
+
+                <ul class="sidebar-submenu-category-list" data-accordion>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="Netflix.html" class="sidebar-submenu-title">
+                      <p class="product-name">Netflix</p>
+                      <data value="300" class="stock" title="Available Stock">300</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="Prime.html" class="sidebar-submenu-title">
+                      <p class="product-name">Prime Video</p>
+                      <data value="60" class="stock" title="Available Stock">260</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="Zee5.html" class="sidebar-submenu-title">
+                      <p class="product-name">Zee5</p>
+                      <data value="50" class="stock" title="Available Stock">250</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Aha</p>
+                      <data value="87" class="stock" title="Available Stock">187</data>
+                    </a>
+                  </li>
+
+                </ul>
+
+              </li>
+
+              <li class="sidebar-menu-category">
+
+                <button class="sidebar-accordion-menu" data-accordion-btn>
+
+                  <div class="menu-title-flex">
+                    <img src="./assets/images/Aha_OTT_Logo.svg" alt="Entertainment" class="menu-title-img" width="20"
+                      height="20">
+
+                    <p class="menu-title">Entertainment</p>
+                  </div>
+
+                  <div>
+                    <ion-icon name="add-outline" class="add-icon"></ion-icon>
+                    <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+                  </div>
+
+                </button>
+
+                <ul class="sidebar-submenu-category-list" data-accordion>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Music</p>
+                      <data value="45" class="stock" title="Available Stock">12</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="yt.html" class="sidebar-submenu-title">
+                      <p class="product-name">Youtube</p>
+                      <data value="75" class="stock" title="Available Stock">175</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">SunNxt</p>
+                      <data value="35" class="stock" title="Available Stock">135</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">SonyLiv</p>
+                      <data value="26" class="stock" title="Available Stock">126</data>
+                    </a>
+                  </li>
+
+                </ul>
+
+              </li>
+
+              <li class="sidebar-menu-category">
+
+                <button class="sidebar-accordion-menu" data-accordion-btn>
+
+                  <div class="menu-title-flex">
+                    <img src="./assets/images/18.svg" alt="18+" class="menu-title-img" width="20" height="20">
+
+                    <p class="menu-title">Private(18+)</p>
+                  </div>
+
+                  <div>
+                    <ion-icon name="add-outline" class="add-icon"></ion-icon>
+                    <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+                  </div>
+
+                </button>
+
+                <ul class="sidebar-submenu-category-list" data-accordion>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Tinder Gold</p>
+                      <data value="46" class="stock" title="Available Stock">45</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">OnlyFans</p>
+                      <data value="73" class="stock" title="Available Stock">40</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">VYPR VPN</p>
+                      <data value="61" class="stock" title="Available Stock">50</data>
+                    </a>
+                  </li>
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">TeamSkeet</p>
+                      <data value="61" class="stock" title="Available Stock">50</data>
+                    </a>
+                  </li>
+
+                </ul>
+
+              </li>
+
+              <li class="sidebar-menu-category">
+
+                <button class="sidebar-accordion-menu" data-accordion-btn>
+
+                  <div class="menu-title-flex">
+                    <img src="./assets/images/pen.jpg" alt="Editing" class="menu-title-img" width="20" height="20">
+
+                    <p class="menu-title">Editing Softwares</p>
+                  </div>
+
+                  <div>
+                    <ion-icon name="add-outline" class="add-icon"></ion-icon>
+                    <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+                  </div>
+
+                </button>
+
+                <ul class="sidebar-submenu-category-list" data-accordion>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">PicsArt Gold</p>
+                      <data value="12" class="stock" title="Available Stock">47</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="wf.html" class="sidebar-submenu-title">
+                      <p class="product-name">WonderShare Filmora</p>
+                      <data value="60" class="stock" title="Available Stock">100</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Canva</p>
+                      <data value="50" class="stock" title="Available Stock">50</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Corel Draw 2024</p>
+                      <data value="87" class="stock" title="Available Stock">87</data>
+                    </a>
+                  </li>
+
+                </ul>
+
+              </li>
+
+              <li class="sidebar-menu-category">
+
+                <button class="sidebar-accordion-menu" data-accordion-btn>
+
+                  <div class="menu-title-flex">
+                    <img src="./assets/images/Microsoft-365.webp" alt="Productivity logo" class="menu-title-img"
+                      height="25" width="25" height="20">
+
+                    <p class="menu-title">Productivity</p>
+                  </div>
+
+                  <div>
+                    <ion-icon name="add-outline" class="add-icon"></ion-icon>
+                    <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+                  </div>
+
+                </button>
+
+                <ul class="sidebar-submenu-category-list" data-accordion>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="Linkedin.html" class="sidebar-submenu-title">
+                      <p class="product-name">LinkedIn Premium</p>
+                      <data value="68" class="stock" title="Available Stock">70</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="qbot.html" class="sidebar-submenu-title">
+                      <p class="product-name">QuillBot</p>
+                      <data value="46" class="stock" title="Available Stock">92</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="Grammarly.html" class="sidebar-submenu-title">
+                      <p class="product-name">Grammarly</p>
+                      <data value="79" class="stock" title="Available Stock">193</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="ms365.html" class="sidebar-submenu-title">
+                      <p class="product-name">Microsoft 365</p>
+                      <data value="23" class="stock" title="Available Stock">23</data>
+                    </a>
+                  </li>
+
+                </ul>
+
+              </li>
+
+              <li class="sidebar-menu-category">
+
+                <button class="sidebar-accordion-menu" data-accordion-btn>
+
+                  <div class="menu-title-flex">
+                    <img src="./assets/images/icons/vpnicom.jpg" alt="VPN Icon" class="menu-title-img" width="20"
+                      height="20">
+
+                    <p class="menu-title">VPN</p>
+                  </div>
+
+                  <div>
+                    <ion-icon name="add-outline" class="add-icon"></ion-icon>
+                    <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+                  </div>
+
+                </button>
+
+                <ul class="sidebar-submenu-category-list" data-accordion>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Storage</p>
+                      <data value="50" class="stock" title="Available Stock">50</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">OTT</p>
+                      <data value="48" class="stock" title="Available Stock">48</data>
+                    </a>
+                  </li>
+
+                </ul>
+
+              </li>
+
+              <li class="sidebar-menu-category">
+
+                <button class="sidebar-accordion-menu" data-accordion-btn>
+
+                  <div class="menu-title-flex">
+                    <img src="./assets/images/icons/entertainmenticon.png" alt="Entertainment" class="menu-title-img"
+                      width="20" height="20">
+
+                    <p class="menu-title">Entertainment</p>
+                  </div>
+
+                  <div>
+                    <ion-icon name="add-outline" class="add-icon"></ion-icon>
+                    <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+                  </div>
+                </button>
+
+              </li>
+
+            </ul>
+
+          </div>
+
+          <div class="product-showcase">
+
+            <h3 class="showcase-heading">Best Sellers</h3>
+
+            <div class="showcase-wrapper">
+
+              <div class="showcase-container">
+
+                <div class="showcase">
+
+                  <a href="#" class="showcase-img-box">
+                    <img src="./assets/images/products/nord.png" alt="Nord VPN logo" width="75" height="75"
+                      class="showcase-img">
+                  </a>
+
+                  <div class="showcase-content">
+
+                    <a href="#">
+                      <h4 class="showcase-title">Nord VPN</h4>
+                    </a>
+
+                    <div class="showcase-rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                    </div>
+
+                    <div class="price-box">
+                      <del>₹2500.00</del>
+                      <p class="price">₹595.00</p>
+                    </div>
+
+                  </div>
+
+                </div>
+
+                <div class="showcase">
+
+                  <a href="#" class="showcase-img-box">
+                    <img src="./assets/images/products/ipvanish.webp" alt="IP Vanish VPN" class="showcase-img"
+                      width="75" height="75">
+                  </a>
+
+                  <div class="showcase-content">
+
+                    <a href="#">
+                      <h4 class="showcase-title">IP Vanish VPN</h4>
+                    </a>
+                    <div class="showcase-rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star-half-outline"></ion-icon>
+                    </div>
+
+                    <div class="price-box">
+                      <del>₹6000.00</del>
+                      <p class="price">₹300.00</p>
+                    </div>
+
+                  </div>
+
+                </div>
+
+                <div class="showcase">
+
+                  <a href="#" class="showcase-img-box">
+                    <img src="./assets/images/products/vypr.png" alt="VYPR VPN" class="showcase-img" width="75"
+                      height="75">
+                  </a>
+
+                  <div class="showcase-content">
+
+                    <a href="#">
+                      <h4 class="showcase-title">VYPR VPN</h4>
+                    </a>
+                    <div class="showcase-rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star-half-outline"></ion-icon>
+                    </div>
+
+                    <div class="price-box">
+                      <del>₹12000.00</del>
+                      <p class="price">₹450.00</p>
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+
+        <div class="product-box">
+
+          <!--
+            - PRODUCT MINIMAL
+          -->
+
+          <div class="product-minimal">
+
+            <div class="product-showcase">
+
+              <h2 class="title">New Arrivals</h2>
+
+              <div class="showcase-wrapper has-scrollbar">
+
+                <div class="showcase-container">
+
+                  <div class="showcase">
+
+                    <a href="Calm.html" class="showcase-img-box">
+                      <img src="./assets/images/products/calm.png" alt="Calm Logo" width="70" class="showcase-img">
+                    </a>
+
+                    <div class="showcase-content">
+
+                      <a href="Calm.html">
+                        <h4 class="showcase-title">Calm</h4>
+                      </a>
+
+                      <a href="#" class="showcase-category">Meditation</a>
+
+                      <div class="price-box">
+                        <p class="price">₹349.00</p>
+                        <del>₹5500.00</del>
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                  <div class="showcase">
+
+                    <a href="tview.html" class="showcase-img-box">
+                      <img src="./assets/images/products/TradingView_logos_rebrend.png" alt="Trading View Logo"
+                        class="showcase-img" width="70">
+                    </a>
+
+                    <div class="showcase-content">
+
+                      <a href="tview.html">
+                        <h4 class="showcase-title">Trading View Premium</h4>
+                      </a>
+
+                      <a href="#" class="showcase-category">Stocks</a>
+
+                      <div class="price-box">
+                        <p class="price">₹4935.00</p>
+                        <del>₹47940.00</del>
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                  <div class="showcase">
+
+                    <a href="yt.html" class="showcase-img-box">
+                      <img src="./assets/images/products/yt.jpg" alt="Youtube Premium" class="showcase-img" width="70">
+                    </a>
+
+                    <div class="showcase-content">
+
+                      <a href="yt.html">
+                        <h4 class="showcase-title">Youtube Premium</h4>
+                      </a>
+
+                      <a href="#" class="showcase-category">OTT</a>
+
+                      <div class="price-box">
+                        <p class="price">₹999.00</p>
+                        <del>₹1548.00</del>
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                  <div class="showcase">
+
+                    <a href="tinder.html" class="showcase-img-box">
+                      <img src="./assets/images/products/tinder-gold.jpg" alt="Tinder Gold" class="showcase-img"
+                        width="70">
+                    </a>
+
+                    <div class="showcase-content">
+
+                      <a href="tinder.html">
+                        <h4 class="showcase-title">Tinder Gold 12 Months</h4>
+                      </a>
+
+                      <a href="#" class="showcase-category">Private</a>
+
+                      <div class="price-box">
+                        <p class="price">₹3799.00</p>
+                        <del>₹7048.00</del>
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                </div>
+
+                <div class="showcase-container">
+
+                  <div class="showcase">
+
+                    <a href="Zee5.html" class="showcase-img-box">
+                      <img src="./assets/images/products/Zee5.webp" alt="Zee-5" class="showcase-img" width="70">
+                    </a>
+
+                    <div class="showcase-content">
+
+                      <a href="Zee5.html">
+                        <h4 class="showcase-title">Zee-5 Yearly</h4>
+                      </a>
+
+                      <a href="#" class="showcase-category">OTT</a>
+
+                      <div class="price-box">
+                        <p class="price">₹549.00</p>
+                        <del>₹999.00</del>
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                  <div class="showcase">
+
+                    <a href="Linkedin.html" class="showcase-img-box">
+                      <img src="./assets/images/products/LinkedIn-Logo.wine.png" alt="LinkedIn Premium"
+                        class="showcase-img" width="70">
+                    </a>
+
+                    <div class="showcase-content">
+
+                      <a href="Linkedin.html">
+                        <h4 class="showcase-title">LinkedIn Premium 12 Months</h4>
+                      </a>
+
+                      <a href="#" class="showcase-category">Careers</a>
+
+                      <div class="price-box">
+                        <p class="price">₹8499.00</p>
+                        <del>₹38,800.00</del>
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                  <div class="showcase">
+
+                    <a href="Grammarly.html" class="showcase-img-box">
+                      <img src="./assets/images/products/grammarly3875.jpg" alt="Grammarly Premium" class="showcase-img"
+                        width="70">
+                    </a>
+
+                    <div class="showcase-content">
+
+                      <a href="Grammarly.html">
+                        <h4 class="showcase-title">Grammarly 12 Months</h4>
+                      </a>
+
+                      <a href="#" class="showcase-category">Education</a>
+
+                      <div class="price-box">
+                        <p class="price">₹3499.00</p>
+                        <del>₹18600.00</del>
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                  <div class="showcase">
+
+                    <a href="hf.html" class="showcase-img-box">
+                      <img src="./assets/images/products/healthifyme.png" alt="HealthifyMe" class="showcase-img"
+                        width="70">
+                    </a>
+
+                    <div class="showcase-content">
+
+                      <a href="hf.html">
+                        <h4 class="showcase-title">HealthifyMe 3 Months</h4>
+                      </a>
+
+                      <a href="#" class="showcase-category">Health</a>
+
+                      <div class="price-box">
+                        <p class="price">₹249.00</p>
+                        <del>₹999.00</del>
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div>
+
+            <div class="product-showcase">
+
+              <h2 class="title">Trending</h2>
+
+              <div class="showcase-wrapper  has-scrollbar">
+
+                <div class="showcase-container">
+
+                  <div class="showcase">
+
+                    <a href="ms365.html" class="showcase-img-box">
+                      <img src="./assets/images/products/ms365.png" alt="Microsoft-365 Logo" class="showcase-img"
+                        width="50">
+                    </a>
+
+                    <div class="showcase-content">
+
+                      <a href="ms365.html">
+                        <h4 class="showcase-title">Microsoft-365</h4>
+                      </a>
+
+                      <a href="#" class="showcase-category">Productivity</a>
+
+                      <div class="price-box">
+                        <p class="price">₹699.00</p>
+                        <del>₹5300.00</del>
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                  <div class="showcase">
+
+                    <a href="gone.html" class="showcase-img-box">
+                      <img src="./assets/images/products/googlecloud.png" alt="Google-One Storage" class="showcase-img"
+                        width="50">
+                    </a>
+
+                    <div class="showcase-content">
+
+                      <a href="gone.html">
+                        <h4 class="showcase-title">Google-One Storage 100GB</h4>
+                      </a>
+
+                      <a href="#" class="showcase-category">Productivity</a>
+
+                      <div class="price-box">
+                        <p class="price">₹249.00</p>
+                        <del>₹.00</del>
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                  <div class="showcase">
+
+                    <a href="qbot.html" class="showcase-img-box">
+                      <img src="./assets/images/products/quillbot.jpeg" alt="QuillBot" class="showcase-img" width="50">
+                    </a>
+
+                    <div class="showcase-content">
+
+                      <a href="qbot.html">
+                        <h4 class="showcase-title">QuillBot</h4>
+                      </a>
+
+                      <a href="#" class="showcase-category">Productivity</a>
+
+                      <div class="price-box">
+                        <p class="price">₹999.00</p>
+                        <del>₹8300.00</del>
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                  <div class="showcase">
+
+                    <a href="et.html" class="showcase-img-box">
+                      <img src="./assets/images/products/et.png" alt="Economic Times" class="showcase-img" width="70">
+                    </a>
+
+                    <div class="showcase-content">
+
+                      <a href="et.html">
+                        <h4 class="showcase-title">Economic Times</h4>
+                      </a>
+
+                      <a href="et.html" class="showcase-category">News</a>
+
+                      <div class="price-box">
+                        <p class="price">₹249.00</p>
+                        <del>₹800.00</del>
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div>
+
+            <div class="product-showcase">
+
+              <h2 class="title">Top Rated</h2>
+
+              <div class="showcase-wrapper  has-scrollbar">
+
+                <div class="showcase-container">
+
+                  <div class="showcase">
+
+                    <a href="Eazydiner.html" class="showcase-img-box">
+                      <img src="./assets/images/products/eazydiner.png" alt="EazyDiner" class="showcase-img" width="50">
+                    </a>
+
+                    <div class="showcase-content">
+
+                      <a href="Eazydiner.html">
+                        <h4 class="showcase-title">EazyDiner 6 Month Premium</h4>
+                      </a>
+
+                      <a href="#" class="showcase-category">Food</a>
+
+                      <div class="price-box">
+                        <p class="price">₹599.00</p>
+                        <del>₹2190.00</del>
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                  <div class="showcase">
+
+                    <a href="wf.html" class="showcase-img-box">
+                      <img src="./assets/images/products/filmora.webp" alt="WonderShare Filmora" class="showcase-img"
+                        width="50">
+                    </a>
+
+                    <div class="showcase-content">
+
+                      <a href="wf.html">
+                        <h4 class="showcase-title">WonderShare Filmora</h4>
+                      </a>
+
+                      <a href="#" class="showcase-category">Design</a>
+
+                      <div class="price-box">
+                        <p class="price">₹1499.00</p>
+                        <del>₹6891.00</del>
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                  <div class="showcase">
+
+                    <a href="#" class="showcase-img-box">
+                      <img src="./assets/images/products/kaspersky.png" alt="Kaspersky" class="showcase-img" width="50">
+                    </a>
+
+                    <div class="showcase-content">
+
+                      <a href="#">
+                        <h4 class="showcase-title">Kaspersky</h4>
+                      </a>
+
+                      <a href="#" class="showcase-category">Security</a>
+
+                      <div class="price-box">
+                        <p class="price">₹449.00</p>
+                        <del>₹2149.00</del>
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                  <div class="showcase">
+
+                    <a href="#" class="showcase-img-box">
+                      <img src="./assets/images/products/chegg.png" alt="Chegg Study" class="showcase-img" width="50">
+                    </a>
+
+                    <div class="showcase-content">
+
+                      <a href="#">
+                        <h4 class="showcase-title">Chegg Study</h4>
+                      </a>
+
+                      <a href="#" class="showcase-category">Education</a>
+
+                      <div class="price-box">
+                        <p class="price">₹699.00</p>
+                        <del>₹1500.00</del>
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                </div>
+
+                <div class="showcase-container">
+
+                  <div class="showcase">
+
+                    <a href="#" class="showcase-img-box">
+                      <img src="./assets/images/products/flight.png" alt="FlightRadar 24" class="showcase-img"
+                        width="50">
+                    </a>
+
+                    <div class="showcase-content">
+
+                      <a href="#">
+                        <h4 class="showcase-title">FlightRadar 24</h4>
+                      </a>
+
+                      <a href="#" class="showcase-category">Tracker</a>
+
+                      <div class="price-box">
+                        <p class="price">₹399.00</p>
+                        <del>₹2700.00</del>
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                  <div class="showcase">
+
+                    <a href="#" class="showcase-img-box">
+                      <img src="./assets/images/products/freepik.svg" alt="Freepik Premium" class="showcase-img"
+                        width="50">
+                    </a>
+
+                    <div class="showcase-content">
+
+                      <a href="#">
+                        <h4 class="showcase-title">Freepik Premium</h4>
+                      </a>
+
+                      <a href="#" class="showcase-category">Editing</a>
+
+                      <div class="price-box">
+                        <p class="price">₹399.00</p>
+                        <del>₹5000.00</del>
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                  <div class="showcase">
+
+                    <a href="#" class="showcase-img-box">
+                      <img src="./assets/images/products/Headspace-logo.jpg" alt="HeadSpace Yearly" class="showcase-img"
+                        width="50">
+                    </a>
+
+                    <div class="showcase-content">
+
+                      <a href="#">
+                        <h4 class="showcase-title">HeadSpace Yearly</h4>
+                      </a>
+
+                      <a href="#" class="showcase-category">Health & Fitness</a>
+
+                      <div class="price-box">
+                        <p class="price">₹399.00</p>
+                        <del>₹4999.00</del>
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                  <div class="showcase">
+
+                    <a href="#" class="showcase-img-box">
+                      <img src="./assets/images/products/smallpdf.jpeg" alt="SmallPro PDF Yearly" class="showcase-img"
+                        width="50">
+                    </a>
+
+                    <div class="showcase-content">
+
+                      <a href="#">
+                        <h4 class="showcase-title">SmallPro PDF Yearly</h4>
+                      </a>
+
+                      <a href="#" class="showcase-category">Productivity</a>
+
+                      <div class="price-box">
+                        <p class="price">₹399.00</p>
+                        <del>₹8640.00</del>
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+
+
+          <!--
+            - PRODUCT FEATURED
+          -->
+
+          <div class="product-featured">
+
+            <h2 class="title">Deal of the day</h2>
+
+            <div class="showcase-wrapper has-scrollbar">
+
+              <div class="showcase-container">
+
+                <div class="showcase">
+
+                  <div class="showcase-banner">
+                    <img src="./assets/images/products/netflixlogo.avif" alt="netflixlogo" class="showcase-img">
+                  </div>
+
+                  <div class="showcase-content">
+
+                    <div class="showcase-rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star-outline"></ion-icon>
+                    </div>
+
+                    <a href="#">
+                      <h3 class="showcase-title">Netflix</h3>
+                    </a>
+
+                    <p class="showcase-desc">
+                      Get single screen Premium 4K UHD+ Account at just
+                    </p>
+
+                    <div class="price-box">
+                      <p class="price">₹150.00</p>
+
+                      <del>₹200.00</del>
+                    </div>
+
+                    <button class="add-cart-btn">Add to cart</button>
+
+                    <div class="showcase-status">
+                      <div class="wrapper">
+                        <p>
+                          already sold: <b>20</b>
+                        </p>
+
+                        <p>
+                          available: <b>40</b>
+                        </p>
+                      </div>
+
+                      <div class="showcase-status-bar"></div>
+                    </div>
+
+                    <div class="countdown-box">
+
+                      <p class="countdown-desc">
+                        Hurry Up! Offer ends in:
+                      </p>
+
+                      <div class="countdown">
+
+                        <div class="countdown-content">
+
+                          <p class="display-number">360</p>
+
+                          <p class="display-text">Days</p>
+
+                        </div>
+
+                        <div class="countdown-content">
+                          <p class="display-number">24</p>
+                          <p class="display-text">Hours</p>
+                        </div>
+
+                        <div class="countdown-content">
+                          <p class="display-number">59</p>
+                          <p class="display-text">Min</p>
+                        </div>
+
+                        <div class="countdown-content">
+                          <p class="display-number">00</p>
+                          <p class="display-text">Sec</p>
+                        </div>
+
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+              <div class="showcase-container">
+
+                <div class="showcase">
+
+                  <div class="showcase-banner">
+                    <img src="./assets/images/products/w11pro.webp" alt="Windows 11 Pro Logo" class="showcase-img">
+                  </div>
+
+                  <div class="showcase-content">
+
+                    <div class="showcase-rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                    </div>
+
+                    <h3 class="showcase-title">
+                      <a href="#" class="showcase-title">Windows 11 Pro Key</a>
+                    </h3>
+
+                    <p class="showcase-desc">
+                      Get the legit and official windows 11 pro key at just
+                    </p>
+
+                    <div class="price-box">
+                      <p class="price">₹1499.00</p>
+                      <del>₹11999.00</del>
+                    </div>
+
+                    <button class="add-cart-btn">add to cart</button>
+
+                    <div class="showcase-status">
+                      <div class="wrapper">
+                        <p> already sold: <b>15</b> </p>
+
+                        <p> available: <b>20</b> </p>
+                      </div>
+
+                      <div class="showcase-status-bar"></div>
+                    </div>
+
+                    <div class="countdown-box">
+
+                      <p class="countdown-desc">Hurry Up! Offer ends in:</p>
+
+                      <div class="countdown">
+                        <div class="countdown-content">
+                          <p class="display-number">360</p>
+                          <p class="display-text">Days</p>
+                        </div>
+
+                        <div class="countdown-content">
+                          <p class="display-number">24</p>
+                          <p class="display-text">Hours</p>
+                        </div>
+
+                        <div class="countdown-content">
+                          <p class="display-number">59</p>
+                          <p class="display-text">Min</p>
+                        </div>
+
+                        <div class="countdown-content">
+                          <p class="display-number">00</p>
+                          <p class="display-text">Sec</p>
+                        </div>
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+              <div class="showcase-container">
+
+                <div class="showcase">
+
+                  <div class="showcase-banner">
+                    <img src="./assets/images/products/canva.webp" alt="Canva Logo" class="showcase-img">
+                  </div>
+
+                  <div class="showcase-content">
+
+                    <div class="showcase-rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                    </div>
+
+                    <h3 class="showcase-title">
+                      <a href="#" class="showcase-title">Canva</a>
+                    </h3>
+
+                    <p class="showcase-desc">
+                      Get Canva Pro for 1 year at just
+                    </p>
+
+                    <div class="price-box">
+                      <p class="price">₹199.00</p>
+                      <del>₹7999.00</del>
+                    </div>
+
+                    <button class="add-cart-btn">add to cart</button>
+
+                    <div class="showcase-status">
+                      <div class="wrapper">
+                        <p> already sold: <b>5</b> </p>
+
+                        <p> available: <b>8</b> </p>
+                      </div>
+
+                      <div class="showcase-status-bar"></div>
+                    </div>
+
+                    <div class="countdown-box">
+
+                      <p class="countdown-desc">Hurry Up! Offer ends in:</p>
+
+                      <div class="countdown">
+                        <div class="countdown-content">
+                          <p class="display-number">360</p>
+                          <p class="display-text">Days</p>
+                        </div>
+
+                        <div class="countdown-content">
+                          <p class="display-number">24</p>
+                          <p class="display-text">Hours</p>
+                        </div>
+
+                        <div class="countdown-content">
+                          <p class="display-number">59</p>
+                          <p class="display-text">Min</p>
+                        </div>
+
+                        <div class="countdown-content">
+                          <p class="display-number">00</p>
+                          <p class="display-text">Sec</p>
+                        </div>
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+
+
+          <!--
+            - PRODUCT GRID
+          -->
+
+          <div class="product-main">
+
+            <h2 class="title">New Products</h2>
+
+            <div class="product-grid">
+
+              <div class="showcase">
+
+                <div class="showcase-banner">
+
+                  <img src="./assets/images/products/grammarly3875.jpg" alt="Grammarly" width="300"
+                    class="product-img default">
+                  <img src="./assets/images/products/grammarly3875.-2jpg.png" alt="Grammarly" width="300"
+                    class="product-img hover">
+
+                  <p class="showcase-badge">81%</p>
+
+                  <div class="showcase-actions">
+
+                    <button class="btn-action">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn-action">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn-action">
+                      <ion-icon name="repeat-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn-action">
+                      <ion-icon name="bag-add-outline"></ion-icon>
+                    </button>
+
+                  </div>
+
+                </div>
+
+                <div class="showcase-content">
+
+                  <a href="#" class="showcase-category">Productivity</a>
+
+                  <a href="Grammarly.html">
+                    <h3 class="showcase-title">Grammarly</h3>
+                  </a>
+
+                  <div class="showcase-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                  </div>
+
+                  <div class="price-box">
+                    <p class="price">₹3499.00</p>
+                    <del>₹18600.00</del>
+                  </div>
+
+                </div>
+
+              </div>
+
+              <div class="showcase">
+
+                <div class="showcase-banner">
+                  <img src="./assets/images/products/eazydiner.png" alt="EazyDiner" class="product-img default"
+                    width="50">
+                  <img src="./assets/images/products/eazydiner2.png" alt="EazyDiner" class="product-img hover"
+                    width="50">
+
+                  <p class="showcase-badge angle pink">New</p>
+
+                  <div class="showcase-actions">
+                    <button class="btn-action">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn-action">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn-action">
+                      <ion-icon name="repeat-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn-action">
+                      <ion-icon name="bag-add-outline"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+
+                <div class="showcase-content">
+                  <a href="#" class="showcase-category">Food</a>
+
+                  <h3>
+                    <a href="#" class="showcase-title">EazyDiner</a>
+                  </h3>
+
+                  <div class="showcase-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                  </div>
+
+                  <div class="price-box">
+                    <p class="price">₹599.00</p>
+                    <del>₹2190.00</del>
+                  </div>
+
+                </div>
+
+              </div>
+
+              <div class="showcase">
+
+                <div class="showcase-banner">
+
+                  <img src="./assets/images/products/spotify.png" alt="Spotify" width="300" class="product-img default">
+                  <img src="./assets/images/spotify 2.jpg" alt="Spotify" width="300" class="product-img hover">
+
+                  <p class="showcase-badge">62%</p>
+
+                  <div class="showcase-actions">
+
+                    <button class="btn-action">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn-action">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn-action">
+                      <ion-icon name="repeat-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn-action">
+                      <ion-icon name="bag-add-outline"></ion-icon>
+                    </button>
+
+                  </div>
+
+                </div>
+
+                <div class="showcase-content">
+
+                  <a href="#" class="showcase-category">Music</a>
+
+                  <a href="Productpages/Spotify.html">
+                    <h3 class="showcase-title">Spotify</h3>
+                  </a>
+
+                  <div class="showcase-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+
+                  </div>
+
+                  <div class="price-box">
+                    <p class="price">₹75.62</p>
+                    <del>₹199.00</del>
+                  </div>
+
+                </div>
+
+              </div>
+
+              <div class="showcase">
+
+                <div class="showcase-banner">
+                  <img src="./assets/images/products/prime.png" alt="Prime Video" class="product-img default"
+                    width="50">
+                  <img src="./assets/images/products/prime 2.png" alt="Prime Video" class="product-img hover"
+                    width="50">
+
+                  <p class="showcase-badge angle pink"> Offer</p>
+
+                  <div class="showcase-actions">
+                    <button class="btn-action">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn-action">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn-action">
+                      <ion-icon name="repeat-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn-action">
+                      <ion-icon name="bag-add-outline"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+
+                <div class="showcase-content">
+                  <a href="#" class="showcase-category">Entertainment</a>
+
+
+                  <h3>
+                    <a href="./Productpages/Prime.html" class="showcase-title">Prime Video</a>
+                  </h3>
+
+                  <div class="showcase-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+
+                  </div>
+
+                  <div class="price-box">
+                    <p class="price">₹625.00</p>
+                    <del>₹2250.00</del>
+                  </div>
+
+                </div>
+
+              </div>
+              <div class="showcase">
+
+                <div class="showcase-banner">
+
+                  <img src="./assets/images/products/netflix.png" alt="Netflix" width="300" class="product-img default">
+                  <img src="./assets/images/products/netflix 2.jpg" alt="Netflix" width="300" class="product-img hover">
+
+                  <p class="showcase-badge">25%</p>
+
+                  <div class="showcase-actions">
+
+                    <button class="btn-action">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn-action">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn-action">
+                      <ion-icon name="repeat-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn-action">
+                      <ion-icon name="bag-add-outline"></ion-icon>
+                    </button>
+
+                  </div>
+
+                </div>
+
+                <div class="showcase-content">
+
+                  <a href="#" class="showcase-category">ENTERTAINMENT</a>
+
+                  <a href="Netflix.html">
+                    <h3 class="showcase-title">Netflix</h3>
+                  </a>
+
+                  <div class="showcase-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                  </div>
+
+                  <div class="price-box">
+                    <p class="price">₹150.00</p>
+                    <del>₹200.00</del>
+                  </div>
+
+                </div>
+
+              </div>
+
+              <div class="showcase">
+
+                <div class="showcase-banner">
+                  <img src="./assets/images/products/calm.jpg" alt="Calm" class="product-img default" width="50">
+                  <img src="./assets/images/products/calm 2.jpeg" alt="Calm" class="product-img hover" width="50">
+
+                  <p class="showcase-badge angle pink">Offer</p>
+
+                  <div class="showcase-actions">
+                    <button class="btn-action">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn-action">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn-action">
+                      <ion-icon name="repeat-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn-action">
+                      <ion-icon name="bag-add-outline"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+
+                <div class="showcase-content">
+                  <a href="#" class="showcase-category">WELLNESS</a>
+
+                  <h3>
+                    <a href="Calm.html" class="showcase-title">Calm</a>
+                  </h3>
+
+                  <div class="showcase-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                  </div>
+
+                  <div class="price-box">
+                    <p class="price">₹349.00</p>
+                    <del>₹5500.00</del>
+                  </div>
+
+                </div>
+
+              </div>
+
+              <div class="showcase">
+
+                <div class="showcase-banner">
+
+                  <img src="./assets/images/products/zee5.png" alt="ZEE5" width="300" class="product-img default">
+                  <img src="./assets/images/products/zee5 2.png" alt="ZEE5" width="300" class="product-img hover">
+
+                  <p class="showcase-badge">45%</p>
+
+                  <div class="showcase-actions">
+
+                    <button class="btn-action">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn-action">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn-action">
+                      <ion-icon name="repeat-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn-action">
+                      <ion-icon name="bag-add-outline"></ion-icon>
+                    </button>
+
+                  </div>
+
+                </div>
+
+                <div class="showcase-content">
+
+                  <a href="#" class="showcase-category">ENTERTAINMENT</a>
+
+                  <a href="Zee5.html">
+                    <h3 class="showcase-title">Zee-5</h3>
+                  </a>
+
+                  <div class="showcase-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                  </div>
+
+                  <div class="price-box">
+                    <p class="price">₹549.00</p>
+                    <del>₹999.00</del>
+                  </div>
+
+                </div>
+
+              </div>
+
+              <div class="showcase">
+
+                <div class="showcase-banner">
+                  <img src="./assets/images/products/linkedin.webp" alt="LinkedIn" class="product-img default"
+                    width="50">
+                  <img src="./assets/images/products/linkedin 2.webp" alt="LinkedIn" class="product-img hover"
+                    width="50">
+
+                  <p class="showcase-badge angle pink">Offer</p>
+
+                  <div class="showcase-actions">
+                    <button class="btn-action">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn-action">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn-action">
+                      <ion-icon name="repeat-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn-action">
+                      <ion-icon name="bag-add-outline"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+
+                <div class="showcase-content">
+                  <a href="#" class="showcase-category">PRODUCTIVITY</a>
+
+                  <h3>
+                    <a href="Linkedin.html" class="showcase-title">LinkedIn</a>
+                  </h3>
+
+                  <div class="showcase-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                  </div>
+
+                  <div class="price-box">
+                    <p class="price">₹8499.00</p>
+                    <del>₹38800.00</del>
+                  </div>
+
+                </div>
+
+              </div>
+              <div class="showcase">
+
+                <div class="showcase-banner">
+
+                  <img src="./assets/images/products/ytp.webp" alt="Yotube Premium" width="300"
+                    class="product-img default">
+                  <img src="./assets/images/products/youtube 2.png" alt="Youtube Premium" width="300"
+                    class="product-img hover">
+
+                  <p class="showcase-badge">35%</p>
+
+                  <div class="showcase-actions">
+
+                    <button class="btn-action">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn-action">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn-action">
+                      <ion-icon name="repeat-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn-action">
+                      <ion-icon name="bag-add-outline"></ion-icon>
+                    </button>
+
+                  </div>
+
+                </div>
+
+                <div class="showcase-content">
+
+                  <a href="#" class="showcase-category">ENTERTAINMENT</a>
+
+                  <a href="freepik.html">
+                    <h3 class="showcase-title">Youtube Premium</h3>
+                  </a>
+
+                  <div class="showcase-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                  </div>
+
+                  <div class="price-box">
+                    <p class="price">₹999.00</p>
+                    <del>₹1548.00</del>
+                  </div>
+
+                </div>
+
+              </div>
+
+              <div class="showcase">
+
+                <div class="showcase-banner">
+                  <img src="./assets/images/products/tg.webp" alt="Tinder" class="product-img default" width="50">
+                  <img src="./assets/images/products/tg 2.jpeg" alt="Tinder" class="product-img hover" width="50">
+
+                  <p class="showcase-badge angle pink">Offer</p>
+
+                  <div class="showcase-actions">
+                    <button class="btn-action">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn-action">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn-action">
+                      <ion-icon name="repeat-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn-action">
+                      <ion-icon name="bag-add-outline"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+
+                <div class="showcase-content">
+                  <a href="#" class="showcase-category">ENTERTAINMENT</a>
+
+                  <h3>
+                    <a href="#" class="showcase-title">Tinder</a>
+                  </h3>
+
+                  <div class="showcase-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                  </div>
+
+                  <div class="price-box">
+                    <p class="price">₹3799.00</p>
+                    <del>₹7048.00</del>
+                  </div>
+
+                </div>
+
+              </div>
+
+              <div class="showcase">
+
+                <div class="showcase-banner">
+
+                  <img src="./assets/images/products/freepik.jpeg" alt="Freepik Premium" class="product-img default"
+                    width="50">
+                  <img src="./assets/images/products/freepik.svg" alt="Freepik Premium" class="product-img hover"
+                    width="50">
+
+                  <p class="showcase-badge">85%</p>
+
+                  <div class="showcase-actions">
+
+                    <button class="btn-action">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn-action">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn-action">
+                      <ion-icon name="repeat-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn-action">
+                      <ion-icon name="bag-add-outline"></ion-icon>
+                    </button>
+
+                  </div>
+
+                </div>
+                <div class="showcase-content">
+
+                  <a href="#" class="showcase-category">Editing</a>
+
+                  <a href="flightradar.html">
+                    <h3 class="showcase-title">Freepik Premium</h3>
+                  </a>
+
+                  <div class="showcase-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                  </div>
+
+                  <div class="price-box">
+                    <p class="price">₹399.00</p>
+                    <del>₹2699.00</del>
+                  </div>
+
+                </div>
+
+              </div>
+
+              <div class="showcase">
+
+                <div class="showcase-banner">
+                  <img src="./assets/images/products/fr24.png" alt="Flight Radar 24" class="product-img default"
+                    width="50">
+                  <img src="./assets/images/products/fr24 2.png" alt="Flight Radar 24" class="product-img hover"
+                    width="50">
+
+                  <p class="showcase-badge angle pink">Offer</p>
+
+                  <div class="showcase-actions">
+                    <button class="btn-action">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn-action">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn-action">
+                      <ion-icon name="repeat-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn-action">
+                      <ion-icon name="bag-add-outline"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+
+                <div class="showcase-content">
+                  <a href="#" class="showcase-category">INFORMATION</a>
+
+                  <h3>
+                    <a href="#" class="showcase-title">Flight Radar 24</a>
+                  </h3>
+
+                  <div class="showcase-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                  </div>
+
+                  <div class="price-box">
+                    <p class="price">₹399.00</p>
+                    <del>₹2700.00</del>
+                  </div>
+
+                </div>
+
+              </div>
+              <div class="showcase">
+
+                <div class="showcase-banner">
+
+                  <img src="./assets/images/products/m365.png" alt="Microsoft 365" width="300"
+                    class="product-img default">
+                  <img src="./assets/images/products/m365 2.jpg" alt="Microsoft 365" width="300"
+                    class="product-img hover">
+
+                  <p class="showcase-badge">86%</p>
+
+                  <div class="showcase-actions">
+
+                    <button class="btn-action">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn-action">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn-action">
+                      <ion-icon name="repeat-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn-action">
+                      <ion-icon name="bag-add-outline"></ion-icon>
+                    </button>
+
+                  </div>
+
+                </div>
+
+                <div class="showcase-content">
+
+                  <a href="#" class="showcase-category">PRODUCTIVITY</a>
+
+                  <a href="#">
+                    <h3 class="showcase-title">Microsoft 365</h3>
+                  </a>
+
+                  <div class="showcase-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                  </div>
+
+                  <div class="price-box">
+                    <p class="price">₹699.00</p>
+                    <del>₹5300.00</del>
+                  </div>
+
+                </div>
+
+              </div>
+
+              <div class="showcase">
+
+                <div class="showcase-banner">
+                  <img src="./assets/images/products/Quillbot.webp" alt="Quillbot" class="product-img default"
+                    width="50">
+                  <img src="./assets/images/products/qb2.png" alt="Quillbot" class="product-img hover" width="50">
+
+                  <p class="showcase-badge angle pink">Offer</p>
+
+                  <div class="showcase-actions">
+                    <button class="btn-action">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn-action">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn-action">
+                      <ion-icon name="repeat-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn-action">
+                      <ion-icon name="bag-add-outline"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+
+                <div class="showcase-content">
+                  <a href="#" class="showcase-category">PRODUCTIVITY</a>
+
+                  <h3>
+                    <a href="#" class="showcase-title">Quillbot</a>
+                  </h3>
+
+                  <div class="showcase-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                  </div>
+
+                  <div class="price-box">
+                    <p class="price">₹999.00</p>
+                    <del>₹8300.00</del>
+                  </div>
+
+                </div>
+
+              </div>
+
+              <div class="showcase">
+
+                <div class="showcase-banner">
+
+                  <img src="./assets/images/products/et 1.jpg" alt="Economic Times" width="300"
+                    class="product-img default">
+                  <img src="./assets/images/products/et 2.webp" alt="Economic Times" width="300"
+                    class="product-img hover">
+
+                  <p class="showcase-badge">75%</p>
+
+                  <div class="showcase-actions">
+
+                    <button class="btn-action">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn-action">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn-action">
+                      <ion-icon name="repeat-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn-action">
+                      <ion-icon name="bag-add-outline"></ion-icon>
+                    </button>
+
+                  </div>
+
+                </div>
+
+                <div class="showcase-content">
+
+                  <a href="#" class="showcase-category">Productivity</a>
+
+                  <a href="#">
+                    <h3 class="showcase-title">Economic Times</h3>
+                  </a>
+
+                  <div class="showcase-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                  </div>
+
+                  <div class="price-box">
+                    <p class="price">₹249.00</p>
+                    <del>₹999.00</del>
+                  </div>
+
+                </div>
+
+              </div>
+
+              <div class="showcase">
+
+                <div class="showcase-banner">
+                  <img src="./assets/images/products/Chegg 1.webp" alt="Chegg Study" class="product-img default"
+                    width="50">
+                  <img src="./assets/images/products/chegg 2.png" alt="Chegg Study" class="product-img hover"
+                    width="50">
+
+                  <p class="showcase-badge angle pink">Offer</p>
+
+                  <div class="showcase-actions">
+                    <button class="btn-action">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn-action">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn-action">
+                      <ion-icon name="repeat-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn-action">
+                      <ion-icon name="bag-add-outline"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+
+                <div class="showcase-content">
+                  <a href="#" class="showcase-category">EDUCATION</a>
+
+                  <h3>
+                    <a href="#" class="showcase-title">Chegg Study</a>
+                  </h3>
+
+                  <div class="showcase-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                  </div>
+
+                  <div class="price-box">
+                    <p class="price">₹699.00</p>
+                    <del>₹1500.00</del>
+                  </div>
+
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <!--
+      - TESTIMONIALS, CTA & SERVICE
+    -->
+
+    <div>
+
+      <div class="container">
+
+        <div class="testimonials-box">
+
+          <!--
+            - TESTIMONIALS
+          -->
+
+          <div class="testimonial">
+
+            <h2 class="title">Testimonial</h2>
+
+            <div class="testimonial-card">
+
+              <img src="./assets/images/vardhan.jpg" alt="alan doe" class="testimonial-banner" width="80" height="80">
+
+              <p class="testimonial-name">Vardhan Sanagapalli</p>
+
+              <p class="testimonial-title">CEO & Founder Invision</p>
+
+              <img src="./assets/images/icons/quotationicon'.png" alt="quotation" class="quotation-img" width="26">
+
+              <p class="testimonial-desc">
+                This website is built by team CineSavings.
+              </p>
+
+            </div>
+
+          </div>
+
+
+
+          <!--
+            - CTA
+          -->
+
+          <div class="cta-container">
+
+            <img src="./assets/images/products/savings.jpg" alt="Prime Savings" class="cta-banner">
+
+            <a href="#" class="cta-content">
+
+              <p class="discount">50% - 85% Discount</p>
+
+              <h2 class="cta-title">Prime Savings</h2>
+
+              <p class="cta-text">Starting @ ₹199</p>
+
+              <button class="cta-btn">Shop now</button>
+
+            </a>
+
+          </div>
+
+
+
+          <!--
+            - SERVICE
+          -->
+
+          <div class="service">
+
+            <h2 class="title">Our Services</h2>
+
+            <div class="service-container">
+
+              <a href="#" class="service-item">
+
+                <div class="service-icon">
+                  <ion-icon name="boat-outline"></ion-icon>
+                </div>
+
+                <div class="service-content">
+
+                  <h3 class="service-title">Worldwide Delivery</h3>
+                  <p class="service-desc">No Hidden Charges</p>
+
+                </div>
+
+              </a>
+
+              <a href="#" class="service-item">
+
+                <div class="service-icon">
+                  <ion-icon name="rocket-outline"></ion-icon>
+                </div>
+
+                <div class="service-content">
+
+                  <h3 class="service-title">Next Day delivery</h3>
+                  <p class="service-desc">If Placed after 8P.M IST</p>
+
+                </div>
+
+              </a>
+
+              <a href="#" class="service-item">
+
+                <div class="service-icon">
+                  <ion-icon name="call-outline"></ion-icon>
+                </div>
+
+                <div class="service-content">
+
+                  <h3 class="service-title">Best Online Support</h3>
+                  <p class="service-desc">Hours: 8AM - 11PM</p>
+
+                </div>
+
+              </a>
+
+              <a href="#" class="service-item">
+
+                <div class="service-icon">
+                  <ion-icon name="arrow-undo-outline"></ion-icon>
+                </div>
+
+                <div class="service-content">
+
+                  <h3 class="service-title">Return Policy</h3>
+                  <p class="service-desc">Easy & Free Return</p>
+
+                </div>
+
+              </a>
+
+              <a href="#" class="service-item">
+
+                <div class="service-icon">
+                  <ion-icon name="ticket-outline"></ion-icon>
+                </div>
+
+                <div class="service-content">
+
+                  <h3 class="service-title">30% money back</h3>
+                  <p class="service-desc">For Order Over ₹600</p>
+
+                </div>
+
+              </a>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+
+
+
+    <!--
+      - BLOG
+    -->
+
+    <div class="blog">
+
+      <div class="container">
+
+        <div class="blog-container has-scrollbar">
+
+          <div class="blog-card">
+
+            <a href="#">
+              <img src="./assets/images/Smallpdfblog.png" alt="smallpdf" width="300" class="blog-banner">
+            </a>
+
+            <div class="blog-content">
+
+              <a href="#" class="blog-category">Productivity</a>
+
+              <a href="#">
+                <h3 class="blog-title">Amazing Service! Delivered within 1 hour.</h3>
+              </a>
+
+              <p class="blog-meta">
+                By <cite>Mr Satish</cite> / <time datetime="2024-04-01">Apr 01, 2024</time>
+              </p>
+
+            </div>
+
+          </div>
+
+          <div class="blog-card">
+
+            <a href="#">
+              <img src="./assets/images/Eazydinerblog.png" alt="EazyDiner" class="blog-banner" width="300">
+            </a>
+
+            <div class="blog-content">
+
+              <a href="#" class="blog-category">Food</a>
+
+              <h3>
+                <a href="#" class="blog-title">Best Premium Service at Cheap Price!!</a>
+              </h3>
+
+              <p class="blog-meta">
+                By <cite>Mrs Lakshmeeswari</cite> / <time datetime="2024-03-31">Mar 31, 2024</time>
+              </p>
+
+            </div>
+
+          </div>
+
+          <div class="blog-card">
+
+            <a href="#">
+              <img src="./assets/images/Windowskeyblog.png" alt="Windows 11 pro key blog review " class="blog-banner"
+                width="300">
+            </a>
+
+            <div class="blog-content">
+
+              <a href="#" class="blog-category">Productivity</a>
+
+              <h3>
+                <a href="#" class="blog-title">Got this Legit windows key at 1499! Thanks to CineSavings for saving me
+                  10K.</a>
+              </h3>
+
+              <p class="blog-meta">
+                By <cite>Mr Sukumar</cite> / <time datetime="2024-03-31">Mar 31, 2024</time>
+              </p>
+
+            </div>
+
+          </div>
+
+          <div class="blog-card">
+
+            <a href="#">
+              <img src="./assets/images/primevideoblog.png" alt="Prime Video Blog review" class="blog-banner"
+                width="300">
+            </a>
+
+            <div class="blog-content">
+
+              <a href="#" class="blog-category">OTT</a>
+
+              <h3>
+                <a href="#" class="blog-title">Enjoying Prime Video got from CineSavings. A Must buy!</a>
+              </h3>
+
+              <p class="blog-meta">
+                By <cite>Mr Suresh</cite> / <time datetime="2024-03-31">Mar 31, 2024</time>
+              </p>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </main>
+
+
+
+
+
+  <!--
+    - FOOTER
+  -->
+
+  <footer>
+
+    <div class="footer-category">
+
+      <div class="container">
+
+        <h2 class="footer-category-title">Brand directory</h2>
+
+        <div class="footer-category-box">
+
+          <h3 class="category-box-title">Productivity :</h3>
+
+          <a href="ms365.html" class="footer-category-link">Microsoft-365</a>
+          <a href="gone.html" class="footer-category-link">Google-One</a>
+          <a href="#" class="footer-category-link">smallpdf</a>
+          <a href="Linkedin.html" class="footer-category-link">LinkedIn</a>
+          <a href="qbot.html" class="footer-category-link">QuillBot</a>
+          <a href="Grammarly.html" class="footer-category-link">Grammarly</a>
+
+        </div>
+
+        <div class="footer-category-box">
+
+          <h3 class="category-box-title">Security :</h3>
+
+          <a href="#" class="footer-category-link">Kaspersky</a>
+          <a href="#" class="footer-category-link">Avast</a>
+          <a href="#" class="footer-category-link">K7</a>
+          <a href="#" class="footer-category-link">CC Cleaner</a>
+          <a href="#" class="footer-category-link">BitDefender</a>
+          <a href="#" class="footer-category-link">McAfee</a>
+
+        </div>
+
+
+        <div class="footer-category-box">
+
+          <h3 class="category-box-title">VPN :</h3>
+
+          <a href="#" class="footer-category-link">Nord</a>
+          <a href="#" class="footer-category-link">VYPR</a>
+          <a href="#" class="footer-category-link">Proton</a>
+          <a href="#" class="footer-category-link">IP Vanish</a>
+          <a href="#" class="footer-category-link">Atlas</a>
+          <a href="#" class="footer-category-link">FlyVPN</a>
+
+        </div>
+
+        <div class="footer-category-box">
+          <h3 class="category-box-title">Entertainment :</h3>
+
+          <a href="Netflix.html" class="footer-category-link">Netflix</a>
+          <a href="Prime.html" class="footer-category-link">Prime Video</a>
+          <a href="yt.html" class="footer-category-link">Youtube</a>
+          <a href="Zee5.html" class="footer-category-link">Zee-5</a>
+          <a href="#" class="footer-category-link">SunNxt</a>
+          <a href="#" class="footer-category-link">HotStar</a>
+          <a href="#" class="footer-category-link">SonyLiv</a>
+          <a href="#" class="footer-category-link">AltBalaji</a>
+        </div>
+
+
+        <div class="footer-category-box">
+          <h3 class="category-box-title">Private :</h3>
+
+          <a href="tview.html" class="footer-category-link">TradingView</a>
+          <a href="flightradar.html" class="footer-category-link">FlightRadar</a>
+        </div>
+
+        <div class="footer-category-box">
+
+          <h3 class="category-box-title">Music :</h3>
+
+          <a href="#" class="footer-category-link">Apple</a>
+          <a href="#" class="footer-category-link">Jio Saavn</a>
+          <a href="#" class="footer-category-link">YT Music</a>
+          <a href="Spotify.html" class="footer-category-link">Spotify</a>
+          <a href="#" class="footer-category-link">Gaana</a>
+          <a href="#" class="footer-category-link">Scribd</a>
+
+        </div>
+
+        <div class="footer-category-box">
+
+          <h3 class="category-box-title">Graphic Designing :</h3>
+
+          <a href="#" class="footer-category-link">Canva</a>
+          <a href="#" class="footer-category-link">Adobe Photoshop</a>
+          <a href="#" class="footer-category-link">CorelDraw</a>
+          <a href="#" class="footer-category-link">Illustrator</a>
+          <a href="wf.html" class="footer-category-link">Wondershare Filmora</a>
+          <a href="#" class="footer-category-link">Animotica</a>
+
+        </div>
+
+        <div class="footer-category-box">
+          <h3 class="category-box-title">Adult 18+ :</h3>
+
+          <a href="#" class="footer-category-link">OnlyFans</a>
+          <a href="#" class="footer-category-link">Brazzers</a>
+          <a href="#" class="footer-category-link">Porn Hub</a>
+          <a href="#" class="footer-category-link">Blacked</a>
+          <a href="#" class="footer-category-link">BangBros</a>
+          <a href="#" class="footer-category-link">Hentai</a>
+          <a href="#" class="footer-category-link">Erito</a>
+          <a href="#" class="footer-category-link">Nubiles</a>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="footer-nav">
+
+      <div class="container">
+
+        <ul class="footer-nav-list">
+
+          <li class="footer-nav-item">
+            <h2 class="nav-title">Popular Categories</h2>
+          </li>
+
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Productivity</a>
+          </li>
+
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">OTT</a>
+          </li>
+
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Graphic Designing</a>
+          </li>
+
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Private</a>
+          </li>
+
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Adult 18+</a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-nav-list">
+
+          <li class="footer-nav-item">
+            <h2 class="nav-title">Products</h2>
+          </li>
+
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Prices drop</a>
+          </li>
+
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">New products</a>
+          </li>
+
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Best sales</a>
+          </li>
+
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Contact us</a>
+          </li>
+
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Sitemap</a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-nav-list">
+
+          <li class="footer-nav-item">
+            <h2 class="nav-title">Our Company</h2>
+          </li>
+
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Delivery</a>
+          </li>
+
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Legal Notice</a>
+          </li>
+
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Terms and conditions</a>
+          </li>
+
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">About us</a>
+          </li>
+
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Secure payment</a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-nav-list">
+
+          <li class="footer-nav-item">
+            <h2 class="nav-title">Services</h2>
+          </li>
+
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Prices drop</a>
+          </li>
+
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">New products</a>
+          </li>
+
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Best sales</a>
+          </li>
+
+          <li class="footer-nav-item">
+            <a href="mailto:cinesavings@gmail.com" class="footer-nav-link">Contact us</a>
+          </li>
+
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Sitemap</a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-nav-list">
+
+          <li class="footer-nav-item">
+            <h2 id="con" class="nav-title">Contact</h2>
+          </li>
+
+          <li class="footer-nav-item flex">
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <address class="content">
+              OVR Enclave, Pithapuram Colony, Visakhapatnam 530013.
+            </address>
+          </li>
+
+          <li class="footer-nav-item flex">
+            <div class="icon-box">
+              <ion-icon name="call-outline"></ion-icon>
+            </div>
+
+            <a href="tel:+919988556623" class="footer-nav-link">+919988556623</a>
+          </li>
+
+          <li class="footer-nav-item flex">
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <a href="mailto:cinesavings@gmail.com" class="footer-nav-link">cinesavings@gmail.com</a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-nav-list">
+
+          <li class="footer-nav-item">
+            <h2 class="nav-title">Follow Us</h2>
+          </li>
+
+          <li>
+            <ul class="social-link">
+
+              <li class="footer-nav-item">
+                <a href="https://www.facebook.com/vardcollectionsgiftingstore/" class="footer-nav-link">
+                  <ion-icon name="logo-facebook"></ion-icon>
+                </a>
+              </li>
+
+              <li class="footer-nav-item">
+                <a href="#" class="footer-nav-link">
+                  <ion-icon name="logo-twitter"></ion-icon>
+                </a>
+              </li>
+
+              <li class="footer-nav-item">
+                <a href="https://www.linkedin.com/in/vardhansans/" class="footer-nav-link">
+                  <ion-icon name="logo-linkedin"></ion-icon>
+                </a>
+              </li>
+
+              <li class="footer-nav-item">
+                <a href="https://www.instagram.com/vardcollections/" class="footer-nav-link">
+                  <ion-icon name="logo-instagram"></ion-icon>
+                </a>
+              </li>
+
+            </ul>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+
+      <div class="container">
+
+        <img src="./assets/images/payment.png" alt="payment method" class="payment-img">
+
+        <p class="copyright">
+          Copyright &copy; <a href="#">CineSavings</a> all rights reserved.
+        </p>
+
+      </div>
+
+    </div>
+
+  </footer>
+
+
+
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  x
+</body>
+
+</html>
