@@ -8,7 +8,7 @@ CineSavings is a responsive and interactive website designed by the Team CineSav
 
 ## Usage
 
-To run the website locally, simply clone this repository and open the `CineSavings.html` file in your preferred web browser.
+To run the website locally, simply clone this repository and open the `index.html` file in your preferred web browser.
 
 You are free to:
 
